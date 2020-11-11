@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+body {
+  background-color: #14004c;
+}
+
+.banner img {
+  max-width: 100%;
+  max-height: 30%;
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav a {
+  width: calc(25% - 10px);
+  text-decoration: none;
+  text-align: center;
+  color: #ccc;
+  display: inline-block;
+}
+
+nav a:hover {
+  color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.container {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.col {
+  width: calc(25% - 20px);
+  height: auto;
+  margin: 10px;
+  color: white;
+  float: left;
+}
+
+.col .drinkTitle {
+  width: 60%;
+  display: inline-block;
+}
+
+.col .drinkPrice {
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+}
+
+.col p {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.col img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.col a {
+  text-decoration: none;
+  width: 50px;
+  padding: 3px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  color: #93f5e4;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.col a:hover {
+  width: 60px;
+  background-color: #aaa;
+  color: white;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+/*# sourceMappingURL=main.css.map */

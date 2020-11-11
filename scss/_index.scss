@@ -1,0 +1,78 @@
+body {
+    background-color: #14004c;
+}
+
+.banner img {
+    max-width: 100%;
+    max-height: 30%;
+}
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+    // border: 1px solid white;
+}
+
+nav a {
+    width: calc(25% - 10px);
+    text-decoration: none;
+    text-align: center;
+    color: #ccc;
+    display: inline-block;
+    // border: 1px solid;
+    &:hover {
+        color: white;
+        transition: .5s;
+    }
+}
+
+.container {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.col {
+    width: calc(25% - 20px);
+    height: auto;
+    margin: 10px;
+    color: white;
+    // background-color: #ccc;
+    float: left;
+    & .drinkTitle {
+        // width: 50%;
+        width: 60%;
+        // border: 1px solid white;
+        display: inline-block;
+    }
+    & .drinkPrice {
+        display: inline-block;
+        width: 30%;
+        text-align: right;
+        // border: 1px solid white;
+    }
+    & p {
+        margin-bottom: 10px;
+        color: #ccc;
+    }
+    & img {
+        width: 100%;
+        border-radius: 20px;
+    }
+    & a {
+        text-decoration: none;
+        width: 50px;
+        padding: 3px;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        // background-color: #333;
+        color: rgb(147, 245, 228);
+        transition: .3s;
+    }
+    & a:hover {
+        width: 60px;
+        background-color: #aaa;
+        color: white;
+        transition: .3s;
+    }
+}
