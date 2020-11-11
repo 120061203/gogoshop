@@ -24,13 +24,17 @@ nav a {
   text-decoration: none;
   text-align: center;
   color: #ccc;
+  font-size: 15pt;
   display: inline-block;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 nav a:hover {
   color: white;
-  -webkit-transition: .5s;
-  transition: .5s;
+  background-color: #aaa;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .container {

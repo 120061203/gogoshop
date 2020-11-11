@@ -18,11 +18,14 @@ nav a {
     text-decoration: none;
     text-align: center;
     color: #ccc;
+    font-size: 15pt;
     display: inline-block;
+    transition: .3s;
     // border: 1px solid;
     &:hover {
         color: white;
-        transition: .5s;
+        background-color: #aaa;
+        transition: .3s;
     }
 }
 
