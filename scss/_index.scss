@@ -14,7 +14,7 @@ nav {
 }
 
 nav a {
-    width: calc(25% - 10px);
+    width: calc(33.33% - 10px);
     text-decoration: none;
     text-align: center;
     color: #ccc;
@@ -78,4 +78,10 @@ nav a {
         color: white;
         transition: .3s;
     }
+}
+
+.light {
+    background-color: #aaa;
+    color: white;
+    transition: .3s;
 }
