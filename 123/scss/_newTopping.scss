@@ -1,0 +1,112 @@
+.newToppingArea {
+    width: 400px;
+    // height: 350px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px $brown;
+    h1 {
+        color: $orange;
+        font-size: 1.5rem;
+        text-align: center;
+        padding-top: 10px;
+    }
+    i {
+        color: $orange;
+        font-size: 35px;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    table {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        // background-color: #acc;
+        label {
+            // background-color: green;
+            width: 20px;
+            // border: 2px $orange solid;
+            position: relative;
+            left: -70px;
+            top: -10px;
+            cursor: pointer;
+            // visibility: hidden;
+        }
+        label::after {
+            content: '';
+            // width: 100px;
+            cursor: pointer;
+        }
+    }
+    tr {
+        td:nth-child(1) {
+            width: 180px;
+            // background-color: red;
+        }
+    }
+    td {
+        // background-color: #aaa;
+        color: $orange;
+        width: 50px;
+    }
+    input {
+        border: none;
+        width: 200px;
+        border-bottom: 2px solid $orange;
+        padding: 10px;
+        background-color: transparent;
+        &::placeholder {
+            text-align: center;
+            color: #ddd;
+        }
+        &:focus {
+            outline: none;
+            transition: .2s;
+            &::placeholder {
+                color: #bbc;
+            }
+        }
+    }
+    input[type="file"] {
+        // display: none;
+        width: 50px;
+        height: 20px;
+        font-size: 0;
+        cursor: pointer;
+        opacity: 0;
+        position: relative;
+        top: -10px;
+    }
+    .uploadIcon {
+        z-index: 0;
+        position: relative;
+        left: -70px;
+        top: 10px;
+        font-size: 20px;
+    }
+    input[type="submit"] {
+        border: 2px solid $orange;
+        font-size: 20px;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        // border: 2px solid darken($brown, 20%);
+        padding: 5px 10px;
+        width: 200px;
+        outline: none;
+        color: $orange;
+        // background-color: $orange;
+        border-radius: 24px;
+        transition: .25s;
+        cursor: pointer;
+        &:hover {
+            color: white;
+            background-color: $orange;
+            width: 250px;
+            transition: .3s;
+        }
+    }
+}

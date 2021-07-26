@@ -1,0 +1,106 @@
+.cartArea {
+    h1 {
+        color: $orange;
+        text-align: center;
+    }
+    table {
+        background-color: lighten($lite-yellow, 20%);
+        color: #222;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 0px;
+        border: none;
+        border-collapse: collapse;
+        /* padding: 0; */
+        // margin-bottom: 20px;
+        // margin-top: 20px;
+        &:nth-child(even) {
+            margin-bottom: 20px;
+        }
+    }
+    th,
+    td {
+        width: auto;
+        text-align: center;
+        font-size: 26px;
+        /* border-bottom: 1px solid #efeeee; */
+    }
+    thead tr {
+        color: white;
+        background-color: $orange;
+    }
+    tbody:nth-child(even) tr {
+        // background-color: lighten($primary-color, 40%);
+        border-bottom: 2px solid darken($orange, 1%);
+    }
+    tbody:nth-child(odd) {
+        border-bottom: none;
+    }
+    .editDrink,
+    .deleteDrink {
+        // background-color: #000;
+        display: inline-block;
+    }
+    i {
+        color: $orange;
+        &:hover {
+            color: darken($orange, 20%);
+        }
+    }
+    .sumMoney {
+        // background-color: #fff;
+        margin-top: 20px;
+        float: right;
+        font-size: 1.5rem;
+        // display: inline-block;
+        // width: 100%;
+        // margin: 0 auto;
+        position: relative;
+        right: 10%;
+        text-align: right;
+    }
+    .moneyText {
+        color: $orange;
+        display: inline-block;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    .moneyNumber {
+        font-size: 2.1rem;
+        color: darken($orange, 20%);
+        display: inline-block;
+    }
+    .keepShopping,
+    .submitOrder {
+        color: $orange;
+        margin: 0 10px;
+        background-color: #fff;
+        position: relative;
+        top: 80px;
+        float: right;
+        border-radius: 20px;
+        padding: 5px;
+        transition: .25s;
+        width: 100px;
+        text-align: center;
+        border: 2px solid $orange;
+        cursor: pointer;
+        position: relative;
+        right: -70px;
+        &:hover {
+            background-color: $orange;
+            transition: .25s;
+            a {
+                color: white;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: $orange;
+        }
+    }
+    .submitOrder.disappear {
+        display: none;
+    }
+}

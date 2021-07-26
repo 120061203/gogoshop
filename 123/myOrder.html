@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的訂單</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <style>
+        <?php session_start(); include "css/main.css" ?>
+    </style> -->
+    <script src="https://kit.fontawesome.com/f810d2bb4c.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="logo/gogoshop.ico" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.php">
+                <img src="logo/logo.svg" alt="">
+            </a>
+        </div>
+        <!-- <div class="back">
+            <a href="index.php">
+                <i class="fas fa-arrow-circle-left"></i>
+            </a>
+        </div> -->
+
+        <div class="name">
+            <span class="hello">你好，</span>
+            <span class="userShowName">###</span>
+            <!-- <a href="cart.php">
+                <i class="fas fa-shopping-cart"></i>
+            </a> -->
+        </div>
+
+    </nav>
+    <div class="container">
+        <div class="myOrderArea">
+            <h1>我的訂單</h1>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>訂單編號</th>
+                        <th>品項</th>
+                        <th>尺寸</th>
+                        <th>甜度</th>
+                        <th>冰塊</th>
+                        <th>配料</th>
+                        <th>金額</th>
+                        <th>總金額</th>
+                        <th>狀態</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan=2>O001</td>
+                        <td>QQ奶茶</td>
+                        <td>中</td>
+                        <td>全糖</td>
+                        <td>熱飲</td>
+                        <td>--</td>
+                        <td>45元</td>
+                        <td rowspan=2>95元</td>
+                        <td rowspan=2>
+                            已下單
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>gogo咖啡</td>
+                        <td>中</td>
+                        <td>半糖</td>
+                        <td>熱飲</td>
+                        <td>珍珠</td>
+                        <td>45+5元</td>
+
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td rowspan=3>O002</td>
+                        <td>QQ奶茶</td>
+                        <td>中</td>
+                        <td>全糖</td>
+                        <td>熱飲</td>
+                        <td>--</td>
+                        <td>45元</td>
+
+                    </tr>
+                    <tr>
+                        <td>gogo咖啡</td>
+                        <td>中</td>
+                        <td>半糖</td>
+                        <td>熱飲</td>
+                        <td>珍珠</td>
+                        <td>45+5元</td>
+                        <td rowspan=3>145元</td>
+                        <td rowspan=3>
+                            已下單
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>gogo咖啡</td>
+                        <td>中</td>
+                        <td>半糖</td>
+                        <td>熱飲</td>
+                        <td>珍珠</td>
+                        <td>45+5元</td>
+
+
+                    </tr>
+                </tbody>
+
+            </table>
+
+
+
+            <div class="clearFix"></div>
+        </div>
+        <!--cartAreaEnd-->
+    </div>
+    <!--containerEnd-->
+
+</body>
+
+</html>

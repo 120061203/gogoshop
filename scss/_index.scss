@@ -1,0 +1,278 @@
+nav {
+    height: 100px;
+    background-color: $orange;
+    img {
+        height: 50px;
+        line-height: 100px;
+        position: relative;
+        top: 20px;
+    }
+    a {
+        color: white;
+        // position: relative;
+        // left: 20px;
+        // top: 30px;
+        // z-index: 1000;
+        // background-color: #fff;
+        // display: inline-block;
+        // height: 50px;
+        // width: 150px;
+    }
+    .name {
+        display: inline-block;
+        float: right;
+        font-size: 20px;
+        position: relative;
+        right: 50px;
+        top: -25px;
+        color: white;
+    }
+    i {
+        color: $yellow;
+        font-size: 35px;
+        transition: .3s;
+        &:hover {
+            color: white;
+            transition: .3s;
+        }
+    }
+}
+
+.logo {
+    width: 60px;
+    position: relative;
+    left: 50px;
+    // top: 25px;
+}
+
+.banner {
+    overflow: hidden;
+    height: 200px;
+    background-color: $lite-yellow;
+    // min-width: 960px;
+    img {
+        height: 200px;
+        float: right;
+    }
+}
+
+.bannerLeft {
+    float: left;
+    // background-color: #aca;
+    // z-index: 30;
+    position: relative;
+    left: calc(50% - 300px);
+    top: 40px;
+    h1 {
+        display: inline-block;
+        color: $brown;
+    }
+    h2 {
+        display: inline-block;
+        color: $lite-brown;
+    }
+    a {
+        text-align: center;
+        display: inline-block;
+        line-height: 30px;
+        width: 50px;
+        height: 30px;
+        margin: 10px 10px 0 0;
+        text-decoration: none;
+        background-color: $brown;
+        color: white;
+        border-radius: 10px;
+        transition: .2s;
+        &:hover {
+            transition: .2s;
+            // box-shadow: 0 0 50px $lith-brown;
+            background-color: lighten($brown, 10%);
+        }
+    }
+}
+
+.banner .bannerRight {
+    position: relative;
+    right: -60%;
+    top: -120px;
+    width: 200px;
+    height: 200px;
+    // background-color: #aac;
+}
+
+.white {
+    // float: right;
+    position: relative;
+    left: 80%;
+    z-index: 10;
+    width: 500px;
+    height: 400px;
+    background-color: #fff;
+}
+
+.container {
+    background-color: $yellow;
+    padding: 30px;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.menu {
+    width: 80%;
+    margin: 0 auto;
+    img {
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0 0 20px $brown;
+    }
+    .drink {
+        width: calc(25% - 30px);
+        display: inline-block;
+        margin: 0 10px;
+        // background-color: #fff;
+        img {
+            width: 100%;
+        }
+    }
+    .drinkPrice {
+        display: inline-block;
+    }
+    .drinkIntro {
+        font-size: 20px;
+        font-weight: 500;
+        color: $brown;
+    }
+    .addToCart {
+        // display: inline-block;
+        position: relative;
+        font-size: 1.6rem;
+        top: -110px;
+        left: -20px;
+        float: right;
+        a {
+            color: $brown;
+            &:hover {
+                color: $lite-brown;
+                transition: .3s;
+            }
+        }
+    }
+    .addToCartMobile {
+        opacity: 0;
+    }
+}
+
+.clearFix {
+    clear: both;
+}
+
+footer {
+    background-color: $orange;
+    padding: 20px;
+    a {
+        text-decoration: none;
+        color: white;
+        margin: 0 10px 0 0;
+        &:hover {
+            color: lighten($orange, 30%);
+        }
+    }
+    // text-align: center;
+    .footerInner {
+        color: $brown;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .bannerLeft {
+        clear: both;
+        width: 200px;
+        margin: 0 auto;
+    }
+    .bannerRight {
+        // display: none;
+        // background-color: red;
+        position: relative;
+        right: 100px;
+        // float: right;
+        // height: 200px;
+        img {
+            position: relative;
+            left: 50px;
+        }
+    }
+    .white {
+        // display: none;
+        width: 300px;
+        position: relative;
+        left: 200px;
+    }
+    .menu .drink {
+        width: calc(33.33% - 30px);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        overflow: hidden;
+    }
+    .banner {
+        a {
+            width: 80px;
+        }
+        // min-width: 750px;
+        // background-color: #fff;
+    }
+    .white {
+        display: none;
+    }
+    .bannerLeft {
+        text-align: center;
+        position: relative;
+        left: 30%;
+        font-size: 20px;
+    }
+    .bannerRight {
+        display: none;
+    }
+    .menu .drink {
+        display: block;
+        // background-color: #add;
+        width: 100%;
+    }
+    nav {
+        height: 50px;
+        // position: fixed;
+        img {
+            height: 30px;
+            top: 10px;
+        }
+        .name {
+            display: none;
+        }
+    }
+    .menu {
+        .addToCart {
+            display: none;
+        }
+        .addToCartMobile {
+            // display: inline-block;
+            opacity: 1;
+            position: relative;
+            left: calc(100% - 60px);
+            top: -60px;
+            // float: right;
+            font-size: 3rem;
+            a {
+                // background-color: #aca;
+                color: $brown;
+                &:hover {
+                    color: $lite-brown;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+}

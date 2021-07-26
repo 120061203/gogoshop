@@ -1,0 +1,51 @@
+.historyOrderArea {
+    h1 {
+        color: $orange;
+        text-align: center;
+    }
+    table {
+        background-color: lighten($lite-yellow, 20%);
+        color: #222;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 0px;
+        border: none;
+        border-collapse: collapse;
+        table-layout: fixed;
+        /* padding: 0; */
+        // margin-bottom: 20px;
+        // margin-top: 20px;
+        &:nth-child(odd) {
+            margin-bottom: 20px;
+        }
+    }
+    th,
+    td {
+        width: auto;
+        text-align: center;
+        font-size: 26px;
+        /* border-bottom: 1px solid #efeeee; */
+    }
+    td {
+        word-wrap: break-word;
+        // text-align: center;
+    }
+    thead tr {
+        color: white;
+        background-color: $orange;
+    }
+    tbody tr {
+        // background-color: lighten($primary-color, 40%);
+        border-bottom: 2px solid darken($orange, 1%);
+    }
+    tbody {
+        border-bottom: none;
+    }
+    .historyTable {
+        .drinkName {
+            width: 12%;
+            // background-color: red;
+        }
+    }
+}

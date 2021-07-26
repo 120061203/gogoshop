@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>後台管理系統</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <style>
+        <?php session_start(); include "css/main.css" ?>
+    </style> -->
+    <script src="https://kit.fontawesome.com/f810d2bb4c.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="logo/gogoshop.ico" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="shopManage.php">
+                <img src="logo/logo.svg" alt="">
+            </a>
+        </div>
+        <!-- <div class="back">
+            <a href="index.php">
+                <i class="fas fa-arrow-circle-left"></i>
+            </a>
+        </div> -->
+        <div class="name">
+            <span class="hello">你好，</span>
+            <span class="userShowName">###</span>
+            <!-- <a href="cart.php">
+                <i class="fas fa-shopping-cart"></i>
+            </a> -->
+        </div>
+    </nav>
+    <div class="container">
+        <div class="shopManageArea">
+            <h1>後台管理系統</h1>
+            <div class="card">
+                <a href="newProduct.php">
+                    <i class="far fa-plus-square"></i>
+                </a>
+                <div class="cardIntro">
+                    新增產品
+                </div>
+            </div>
+            <div class="card">
+                <a href="productList.php">
+                    <i class="fab fa-wpforms"></i>
+                </a>
+                <div class="cardIntro">
+                    產品清單
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="myVip.php">
+                    <i class="fas fa-users"></i>
+                </a>
+                <div class="cardIntro">
+                    我的會員
+                </div>
+            </div>
+            <div class="card">
+                <a href="historyOrder.php">
+                    <i class="fab fa-wpforms"></i>
+                </a>
+                <div class="cardIntro">
+                    歷史訂單
+                </div>
+            </div>
+            <div class="card">
+                <a href="waitOrder.php">
+                    <i class="far fa-clock"></i>
+                </a>
+                <div class="cardIntro">
+                    待做訂單
+                </div>
+            </div>
+            <div class="card">
+                <a href="logout_temp.php">
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+                <div class="cardIntro">
+                    賬號登出
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

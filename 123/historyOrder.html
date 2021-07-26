@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歷史訂單</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <style>
+        <?php session_start(); include "css/main.css" ?>
+    </style> -->
+    <script src="https://kit.fontawesome.com/f810d2bb4c.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="logo/gogoshop.ico" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="shop.php">
+                <img src="logo/logo.svg" alt="">
+            </a>
+        </div>
+        <!-- <div class="back">
+            <a href="index.php">
+                <i class="fas fa-arrow-circle-left"></i>
+            </a>
+        </div> -->
+        <div class="name">
+            <span class="hello">你好，</span>
+            <span class="userShowName">###</span>
+            <!-- <a href="cart.php">
+                <i class="fas fa-shopping-cart"></i>
+            </a> -->
+        </div>
+    </nav>
+    <div class="container">
+        <div class="historyOrderArea">
+            <h1>歷史訂單</h1>
+            <table class="historyTable">
+                <thead>
+                    <tr>
+                        <th>編號</th>
+                        <th>下單時間</th>
+                        <th>姓名</th>
+                        <th class="drinkName">品項</th>
+                        <th>尺寸</th>
+                        <th>甜度</th>
+                        <th>冰塊</th>
+                        <th>配料</th>
+                        <th>價格</th>
+                        <th>總金額</th>
+                        <th>取貨</th>
+                        <th>付款</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan=3>O001</td>
+                        <td rowspan=3>01-10<br>13:00</td>
+                        <td rowspan=3>陳小三</td>
+                        <td>QQ奶茶</td>
+                        <td>大杯</td>
+                        <td>全糖</td>
+                        <td>去冰</td>
+                        <td>珍珠</td>
+                        <td>50+5元</td>
+                        <td rowspan=3>165元</td>
+                        <td rowspan=3>自取</td>
+                        <td rowspan=3>線上</td>
+                    </tr>
+                    <tr>
+                        <!-- <td>O001</td> -->
+                        <!-- <td>01-10<br>13:00</td> -->
+                        <!-- <td>陳小二</td> -->
+                        <td>QQ奶茶</td>
+                        <td>大杯</td>
+                        <td>全糖</td>
+                        <td>去冰</td>
+                        <td>珍珠</td>
+                        <td>50+5元</td>
+                        <!-- <td>165元</td> -->
+                    </tr>
+                    <tr>
+                        <!-- <td>O001</td> -->
+                        <!-- <td>01-10<br>13:00</td> -->
+                        <!-- <td>陳小二</td> -->
+                        <td>QQ奶茶</td>
+                        <td>大杯</td>
+                        <td>全糖</td>
+                        <td>去冰</td>
+                        <td>珍珠</td>
+                        <td>50+5元</td>
+                        <!-- <td>165元</td> -->
+                    </tr>
+                    <!--O001結束-->
+                    <tr>
+                        <td rowspan=2>O002</td>
+                        <td rowspan=3>01-10<br>13:05</td>
+                        <td rowspan=3>陳小二</td>
+                        <td>gogo咖啡</td>
+                        <td>大杯</td>
+                        <td>全糖</td>
+                        <td>熱飲</td>
+                        <td>--</td>
+                        <td>70元</td>
+                        <td rowspan=2>135元</td>
+                        <td rowspan=2>自取</td>
+                        <td rowspan=2>線上</td>
+                    </tr>
+                    <tr>
+                        <!-- <td>O001</td> -->
+                        <!-- <td>01-10<br>13:00</td> -->
+                        <!-- <td>陳小二</td> -->
+                        <td>布丁巧克力</td>
+                        <td>大杯</td>
+                        <td>全糖</td>
+                        <td>去冰</td>
+                        <td>珍珠</td>
+                        <td>60+5元</td>
+                        <!-- <td>165元</td> -->
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <!--historyOrderAreaEnd-->
+    </div>
+    <!--containerEnd-->
+</body>
+
+</html>
