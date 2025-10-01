@@ -16,8 +16,8 @@
 	//echo $usr;
 	//echo $pwd;
 	
-	$select_db=@mysql_select_db("gogodrinkshop");//選擇資料庫
-	if(!$select_db)
+	// 檢查資料庫連接
+	if(!$link)
 	{
 		echo'<br>找不到資料庫';
 	}
